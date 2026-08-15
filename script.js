@@ -8,31 +8,31 @@ const dates = [3, 4, 5, 10, 11, 12, 17, 18, 19];
 
 const places = {
   Cafe: [
-    { name: "SeelaZ – Zahraa Maadi", image: "assets/seelaz.jpg", area: "Zahraa Maadi" },
-    { name: "Moka Bistro – Zahraa Maadi", image: "assets/moka.jpg", area: "Zahraa Maadi" },
-    { name: "1980 Coffee – Maadi", image: "assets/coffee1980.jpg", area: "Maadi" },
-    { name: "Vasko Coffee – Maadi", image: "assets/vasko.jpg", area: "Maadi" },
-    { name: "YOKU Coffee House – Zahraa Maadi", image: "assets/yoku.jpg", area: "Zahraa Maadi" }
+    { name: "SeelaZ – Zahraa Maadi", image: "seelaz.jpg", area: "Zahraa Maadi" },
+    { name: "Moka Bistro – Zahraa Maadi", image: "moka.jpg", area: "Zahraa Maadi" },
+    { name: "1980 Coffee – Maadi", image: "coffee1980.jpg", area: "Maadi" },
+    { name: "Vasko Coffee – Maadi", image: "vasko.jpg", area: "Maadi" },
+    { name: "YOKU Coffee House – Zahraa Maadi", image: "yoku.jpg", area: "Zahraa Maadi" }
   ],
   Dinner: [
-    { name: "Calisto Restaurant & Cafe", image: "assets/calisto.jpg", area: "Maadi" },
-    { name: "Tenaya Riverside Dining", image: "assets/tenaya.jpg", area: "Cairo" },
-    { name: "Bistro Paris – Maadi", image: "assets/bistro-paris.jpg", area: "Maadi" },
-    { name: "Estro – An Italian Rooftop", image: "assets/estro.jpg", area: "Maadi" }
+    { name: "Calisto Restaurant & Cafe", image: "calisto.jpg", area: "Maadi" },
+    { name: "Tenaya Riverside Dining", image: "tenaya.jpg", area: "Cairo" },
+    { name: "Bistro Paris – Maadi", image: "bistro-paris.jpg", area: "Maadi" },
+    { name: "Estro – An Italian Rooftop", image: "estro.jpg", area: "Maadi" }
   ],
   Cinema: [
-    { name: "Scene Cinema – District 5", image: "assets/scene-district5.jpg", area: "District 5" },
-    { name: "Scene Cinema – CFC", image: "assets/scene-cfc.jpg", area: "Cairo Festival City" }
+    { name: "Scene Cinema – District 5", image: "scene-district5.jpg", area: "District 5" },
+    { name: "Scene Cinema – CFC", image: "scene-cfc.jpg", area: "Cairo Festival City" }
   ]
 };
 
 const movies = [
-  { name: "El Gawahergy – الجواهرجي", image: "assets/el-gawahergy.jpg" },
-  { name: "Mahmoud Eltany – محمود التاني", image: "assets/mahmoud-eltany.jpg" },
-  { name: "Sakr w Canaria – صقر وكناريا", image: "assets/sakr-w-canaria.jpg" },
-  { name: "Spider-Man: Brand New Day", image: "assets/spiderman.jpg" },
-  { name: "The Odyssey", image: "assets/the-odyssey.jpg" },
-  { name: "Khali Balak Min Nafsik – خلي بالك من نفسك", image: "assets/khali-balak.jpg" }
+  { name: "El Gawahergy – الجواهرجي", image: "el-gawahergy.jpg" },
+  { name: "Mahmoud Eltany – محمود التاني", image: "mahmoud-eltany.jpg" },
+  { name: "Sakr w Canaria – صقر وكناريا", image: "sakr-w-canaria.jpg" },
+  { name: "Spider-Man: Brand New Day", image: "spiderman.jpg" },
+  { name: "The Odyssey", image: "the-odyssey.jpg" },
+  { name: "Khali Balak Min Nafsik – خلي بالك من نفسك", image: "khali-balak.jpg" }
 ];
 
 // Easy-to-edit time lists for Cafe / Dinner.
