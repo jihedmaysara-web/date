@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plan a Date ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand">Date Planner <span>✦</span></div>
+      <div class="step-indicator" id="stepIndicator">Let's start</div>
+    </header>
+
+    <section class="screen active" id="screen-welcome">
+      <div class="hero">
+        <div class="eyebrow">A little plan. A good memory.</div>
+        <h1>Let's plan<br><em>a date.</em></h1>
+        <p>Pick the day, choose the vibe, and let the rest be easy.</p>
+
+        <div class="name-box">
+          <label for="guestName">Your name</label>
+          <input id="guestName" type="text" placeholder="Type your name" autocomplete="name" />
+        </div>
+
+        <div class="welcome-actions">
+          <button class="btn primary" id="startBtn">Let's Plan <span>→</span></button>
+          <button class="btn ghost" id="nahBtn" type="button">Nah</button>
+        </div>
+        <div class="nah-note" id="nahNote"></div>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-date">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Step 1</div>
+          <h2>When are you free?</h2>
+          <p>September 2026</p>
+        </div>
+      </div>
+      <div class="date-grid" id="dateGrid"></div>
+      <div class="nav-row">
+        <button class="btn ghost" data-back="screen-welcome">← Back</button>
+        <button class="btn primary next-btn" id="dateNext" disabled>Continue →</button>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-type">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Step 2</div>
+          <h2>What are we feeling?</h2>
+          <p id="selectedDateText"></p>
+        </div>
+      </div>
+
+      <div class="type-grid">
+        <button class="type-card" data-type="Cafe">
+          <div class="type-icon">☕</div>
+          <h3>Cafe</h3>
+          <span>Chill & coffee</span>
+        </button>
+        <button class="type-card" data-type="Dinner">
+          <div class="type-icon">🍽️</div>
+          <h3>Dinner</h3>
+          <span>Good food & vibes</span>
+        </button>
+        <button class="type-card" data-type="Cinema">
+          <div class="type-icon">🎬</div>
+          <h3>Cinema</h3>
+          <span>Movie night</span>
+        </button>
+      </div>
+
+      <div class="nav-row">
+        <button class="btn ghost" data-back="screen-date">← Back</button>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-place">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow" id="placeEyebrow">Step 3</div>
+          <h2 id="placeTitle">Pick a place</h2>
+          <p id="placeSubtitle"></p>
+        </div>
+      </div>
+      <div class="card-grid" id="placeGrid"></div>
+      <div class="nav-row">
+        <button class="btn ghost" data-back="screen-type">← Back</button>
+        <button class="btn primary next-btn" id="placeNext" disabled>Continue →</button>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-movie">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Step 4</div>
+          <h2>Pick a movie</h2>
+          <p id="cinemaText"></p>
+        </div>
+      </div>
+      <div class="movie-grid" id="movieGrid"></div>
+      <div class="nav-row">
+        <button class="btn ghost" data-back="screen-place">← Back</button>
+        <button class="btn primary next-btn" id="movieNext" disabled>Continue →</button>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-time">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Step 4</div>
+          <h2>What time works?</h2>
+          <p id="timeSubtitle"></p>
+        </div>
+      </div>
+      <div class="time-grid" id="timeGrid"></div>
+      <div class="nav-row">
+        <button class="btn ghost" id="timeBack">← Back</button>
+        <button class="btn primary next-btn" id="timeNext" disabled>Continue →</button>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-confirm">
+      <div class="confirm-wrap">
+        <div class="success-icon">♥</div>
+        <div class="eyebrow">Almost there</div>
+        <h2>Looks like a good plan.</h2>
+        <p class="confirm-sub">Check your choices, then hit confirm.</p>
+
+        <div class="summary-card" id="summaryCard"></div>
+
+        <div class="nav-row">
+          <button class="btn ghost" id="summaryBack">← Change</button>
+          <button class="btn primary" id="confirmBtn">Confirm</button>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
